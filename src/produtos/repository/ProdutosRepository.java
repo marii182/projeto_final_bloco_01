@@ -11,7 +11,5 @@ public interface ProdutosRepository {
 	public void atualizar(Produtos produtos);
 	public void deletar(int idProduto);
 	
-	//Métodos
-	public void adicionarEstoque(int quantidade, int idProduto);
-	public void removerEstoque(int quantidade, int idProduto);
+	
 }

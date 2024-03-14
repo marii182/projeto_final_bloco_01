@@ -2,7 +2,7 @@ package produtos.model;
 
 
 
-public class Produtos {
+public  class Produtos {
 	
 	private int idProduto;
 	private String nomeProduto;
@@ -64,25 +64,7 @@ public class Produtos {
 	
 	}
 	
-	public void adicionarEstoque(int quantidade) {
-		if(quantidade > 0) {
-			this.quantidadeEstoque += quantidade;
-			System.out.println(quantidade + " unidades adicionadas ao estoque");
-		}else {
-			System.out.println("A quantidade a ser adicionada deve ser maior que zero!");
-		}
-	}
 	
-	public void removerEstoque(int quantidade) {
-		if(quantidade > 0 && quantidade <= this.quantidadeEstoque) {
-			this.quantidadeEstoque -= quantidade;
-			System.out.println(quantidade + " unidades foram removidas do estoque.");
-		} else if (quantidade > this.quantidadeEstoque) {
-			System.out.println("O valor digitado é maior do que o estoque disponível");
-		}else {
-			System.out.println("O valor da quantidade a ser removida deve ser maior que zero.");
-		}
-	}
 	
 	
 }
